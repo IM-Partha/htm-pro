@@ -1,0 +1,105 @@
+/* VARIABLES */
+:root {
+  --bg-color: #fafafa;
+  --gap: 2rem;
+  --card-bg: #ffffff;
+  --border-color: #e5e5e5;
+  --text-primary: #111;
+  --text-secondary: #555;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+html, body {
+  height: 100%;
+  overflow: hidden; /* disable vertical scroll */
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+}
+
+
+.scroll-section {
+  height: 100vh; /* FULL SCREEN */
+  overflow: hidden;
+}
+
+
+.scroll-section__track {
+  display: flex;
+  height: 100%;
+  gap: var(--gap);
+  padding-left: 0;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+
+.card {
+  min-width: 100vw;   /* full screen width */
+  height: 100vh;
+  background: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTENT */
+.website .main {
+  text-align: center;
+}
+
+.website h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.website h4 {
+  margin-top: 20px;
+}
+
+.website p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* PURPOSE */
+.purpose {
+  width: 100%;
+  padding: 80px;
+  background-image: url('../images/porpose.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+}
+
+.purpose-title {
+  font-size: 60px;
+}
+
+.purpose-text {
+  line-height: 1.7;
+}
+/* Services */
+.services  {
+  width: 100%;
+  padding: 80px;
+  background-image: url('../images/Generated.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 40%;
+}
+
+.services .purpose-title {
+  font-size: 60px;
+}
+
+.services .purpose-text {
+  line-height: 1.7;
+}
