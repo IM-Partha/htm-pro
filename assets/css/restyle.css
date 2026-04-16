@@ -1,5 +1,12 @@
 @media (max-width:576px) {
 
+    html,
+    body {
+        overflow: hidden;
+        touch-action: none;
+        /* 🔥 important for smooth touch */
+    }
+
     .scroll-section {
         height: 100vh;
         /* FULL SCREEN */
